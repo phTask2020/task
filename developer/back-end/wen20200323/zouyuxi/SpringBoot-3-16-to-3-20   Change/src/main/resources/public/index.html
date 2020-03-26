@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>访问用户页面</title>
+</head>
+<body>
+
+<h3 th:text="简单地问候语--GRPC测试"></h3>
+<form action="/Greeter" th:action="@{/Grerter}" method="get" >
+
+    <input type="button"  onclick=window.open("add.html") value="添加用户" />
+    <input type="button"  onclick=window.open("delete.html") value = "删除用户" />
+    <input type="button"  onclick=window.open("update.html") value = "修改用户" />
+    <input type="button"  onclick=window.open("query.html") value = "查询用户" />
+    <input type="button"  onclick=window.open("queryAll.html") value = "查询全部" />
+</form>
+<div th:replace="~{fragments/footer::footer}"></div>
+</body>
+</html>
