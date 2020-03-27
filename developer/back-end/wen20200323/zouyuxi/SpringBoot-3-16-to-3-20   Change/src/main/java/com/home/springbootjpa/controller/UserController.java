@@ -3,9 +3,13 @@ package com.home.springbootjpa.controller;
 import com.home.springbootjpa.bean.User;
 import com.home.springbootjpa.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
+
 import java.util.List;
 import java.util.Map;
 
@@ -13,117 +17,68 @@ import java.util.Map;
  * @author: 邹玉玺
  * @date: 2020/3/18-22:23
  */
-@RestController
+@Controller
 public class UserController {
     @Autowired
     UserService userService;
 
     //增加用户
-    @PostMapping("/insert")
-    public  Map<String, Object> insertUser(User user) {
-        Map<String,Object> map=new HashMap<>();
-        try {
-            userService.insertUser(user);
-            map.put("success",true);
-            map.put("message","添加成功");
-            map.put("result","");
-            map.put("code",user);
-        } catch (Exception e) {
-            map.put("success",false);
-            map.put("message","删除失败");
-            map.put("result","");
-            map.put("code","");
-
-        }
-        return map;//返回所增加的用户信息
+    @PostMapping("/user")
+    public String addUser(User user, HttpServletRequest request) {
+        userService.insertUser(user);
+        request.getSession().setAttribute("users", user);
+        //跳转到查询所有页面，可以看到插入的对象
+        return "redirect:/users";
     }
 
     //删除用户
-    @DeleteMapping("/delete")
-    public Map<String, Object> deleteById(@PathVariable("id") Integer id) {
-        Map<String,Object> map=new HashMap<>();
-        try {
-            userService.deleteById(id);
-            map.put("success",true);
-            map.put("message","删除成功");
-            map.put("result","");
-            map.put("code","");
-            map.put("timestamp","");
-        } catch (Exception e) {
-            map.put("success",false);
-            map.put("message","删除失败");
-            map.put("code","");
-            map.put("result","");
-            map.put("timestamp","");
-        }
+    @DeleteMapping("/user/{id}")
+    public String deleteById(@PathVariable("id") Integer id) {
+        System.out.println(id);
 
-        return map;
+//        userService.deleteById(id);
+
+        return "redirect:/users";
     }
 
     //修改用户信息
-    @PutMapping("/update")
-    public Map<String, Object> updateUser(User user) {
-        Map<String,Object> map=new HashMap<>();
-        try {
-            userService.updateUser(user);
-            map.put("success",true);
-            map.put("message","修改成功");
-            map.put("code","");
-            map.put("timestamp","");
-            map.put("result","");
-        } catch (Exception e) {
-            map.put("success",false);
-            map.put("message","修改失败");
-            map.put("code","");
-            map.put("timestamp","");
-            map.put("result","");
-        }
+    @PutMapping("/user")
+    public String updateUser(User user,HttpServletRequest Request) {
+        userService.updateUser(user);
+        Request.getSession().setAttribute("users",user);
 
-        return map;
+        return "redirect:/users";
     }
 
-    //根据ID查询用户信息
-    @GetMapping("/queryById")
-    public Map<String, Object> queryById(@PathVariable("id") Integer id) {
-        Map<String,Object> map=new HashMap<>();
-        try {
-            User user = userService.queryById(id);
-            map.put("success",true);
-            map.put("message","查询成功");
-            map.put("result",user);
-            map.put("code","");
-            map.put("timestamp","");
-        } catch (Exception e) {
-            map.put("success",false);
-            map.put("message","查询失败");
-            map.put("result","");
-            map.put("code","");
-            map.put("timestamp","");
-        }
+    //查询所有成员信息
+    @GetMapping("/users")
+    public String userList(HttpServletRequest request) {
+//查出所有成员
+        List<User> list = userService.queryAll();
+        //放到请求域中
+        request.getSession().setAttribute("users", list);
 
-
-        return map;
-    }
-      //查询所有成员信息
-    @GetMapping("/queryAll")
-    public Map<String, Object> queryAll(){
-        Map<String,Object> map=new HashMap<>();
-        try {
-            List<User> list = userService.queryAll();
-            map.put("success",true);
-            map.put("message","查询成功");
-            map.put("code","");
-            map.put("timestamp","");
-            map.put("result",list);
-        } catch (Exception e) {
-            map.put("success",false);
-            map.put("message","查询成功");
-            map.put("code","");
-            map.put("timestamp","");
-            map.put("result","");
-        }
-
-        return map;
+        return "list";
     }
 
+    //来到员工添加页面
+    @GetMapping("/user")
+    public String toAddPage() {
+        //返回到添加页面
+        return "add";
+    }
+
+    //来到员工修改页面
+    @GetMapping("/user/{id}")
+    public String toEditPage(@PathVariable("id") Integer id,HttpServletRequest request) {
+        User user = userService.queryById(id);
+        request.getSession().setAttribute("user",user);
+        //返回到修改页面
+        return "update";
+    }
+    //跳转到删除页面
+    @GetMapping("/userdel")
+    public String toDeletePage(HttpServletRequest request){
+        return "delete";
+    }
 }
