@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+//option java_multiple_files = true;
+option java_package = "com.home.grpc.userlib"; //生成的java存放的包名
+ //   option java_outer_classname = "GreeterWord";  //制定生成的类的名字
+
+
+package userserver;  //给每个文件取一个包名，防止包过多发生错误
+
+// 定义服务
+service UserPublic {
+    // 服务中的方法，用于根据ID获取user信息
+    rpc FindUserMessageById  (Request) returns (Reply);
+
+}
+//客户端传入的字段
+message Request {
+    int32 id = 1;
+}
+
+//输出的字段
+message Reply {
+    string message = 4;
+}
+
