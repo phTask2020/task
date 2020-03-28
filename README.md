@@ -26,7 +26,11 @@
 1. 讲师需要定时检查作业完成情况和质量，在完成作业审查后，需填写培训说明中的完成情况和下步计划。
 2. 学员需要在规定时间内提交作业和周报，如有问题请及时联系讲师。
 
+## 备注：
+用github提交作业，请务必重视
+周报请记住一定用markdown文本提交到github
+
 [developer]: https://github.com/phTask2020/task/tree/master/developer
-[tester]: https://github.com/phTask2020/task/tree/master/tester
+[tester]: https://github.com/phTask2020/task/tree/master/Test
 [weekly]: https://github.com/phTask2020/task/tree/master/weekly
 [sample]: https://github.com/phTask2020/task/blob/master/weekly/2020-03-20/weekly_report_sample.md
