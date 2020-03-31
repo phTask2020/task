@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>add+change二合一</title>
+</head>
+<body>
+<!--需要区分是员工修改还是员工添加-->
+<form th:action="@{/addStudent}" method="post">
+    <!--
+        发送put请求修改学生数据
+        1.springMVC中配置HiddenHttpMethodFilter(springboot自动配置)
+        2.页面创建一个post表单
+        3.创建一个input标签，name="_method";值就是指定的请求方式
+    -->
+
+    <input type="hidden" name="_method" value="put" th:if="${student!=null}"/>
+
+    <input name="id" type="hidden" th:value="${student!=null}?${student.id}"/>
+    姓名：<input name="name" type="text" th:value="${student!=null}?${student.name}"/>
+
+    姓别：<input name="gender" type="text" th:value="${student!=null}?${student.gender}"/>
+
+    <button type="submit" th:text="${student!=null}?'修改':'添加'"></button>
+</form>
+</body>
+</html>

@@ -64,17 +64,17 @@ public class Springboot01ApplicationTests {
         } catch (Exception e) {
             b = false;
         }
-        Assert.assertEquals(true,b);
+        Assert.assertEquals(true, b);
         //当b=true时数据添加成功
         System.out.println("事务不回滚");
     }
 
     //断言测试
     @Test
-    public void testassert01(){
-        int x=10;
+    public void testassert01() {
+        int x = 10;
         System.out.println("Testing Assertion that x==100");
-        assert x==10:"Out assertion failed!";
+        assert x == 10 : "Out assertion failed!";
         System.out.println("Test passed!");
 
 

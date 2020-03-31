@@ -18,39 +18,39 @@ import java.util.Map;
  */
 
 /**
- *
- *第一种赋值方式@ConfigurationProperties（默认从全局配置文件中获取值）:告诉springboot将本类中的所有属性和配置文件中相关的配置进行绑定
+ * 第一种赋值方式@ConfigurationProperties（默认从全局配置文件中获取值）:告诉springboot将本类中的所有属性和配置文件中相关的配置进行绑定
  * prefix = "Person"：配置文件中对应的所有属性一一映射
- *
+ * <p>
  * 只有这个组件是容器中的组件，容器才能提供@ConfigurationProperties功能
- *@Component 把当前组件添加到容器中
  *
+ * @Component 把当前组件添加到容器中
+ * <p>
  * 第二种赋值方式@Value 赋值需要一个一个赋值  支持#{SpEl}spring表达式语言 不支持复杂类型封装（map，list等）
- *
+ * <p>
  * 第三种赋值方式@PropertySource(value={"classpath:person.properties"})加载指定配置文件内容
- *要与@ConfigurationProperties配合使用
+ * 要与@ConfigurationProperties配合使用
  * prefix = "person"要与对象名一致
  */
 @Component
-@PropertySource(value={"classpath:person.properties"})
+@PropertySource(value = {"classpath:person.properties"})
 @ConfigurationProperties(prefix = "person")//第一种赋值方式批量注入（推介使用）
 @Entity
-@Table(name="student")
-@JsonIgnoreProperties({ "handler","hibernateLazyInitializer" })
+@Table(name = "student")
+@JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
 public class Student {
     /**
      * spring容器赋值方式
      * <bean class="Person">
-     *     <property name="name" value="字面量/${key}从环境变量、配置文件中获取值/#{SpEl}spring表达式语言"></property>
+     * <property name="name" value="字面量/${key}从环境变量、配置文件中获取值/#{SpEl}spring表达式语言"></property>
      * </bean>
      */
 //    @Value("${Person.id}") //需要和application.yml配置文件内一致
     @Id//这是一个主键
     @GeneratedValue(strategy = GenerationType.IDENTITY)//自增主键
     private int id;
-//    @Value("${Person.name}")
+    //    @Value("${Person.name}")
     private String name;
-//    @Value("${Person.sex}")
+    //    @Value("${Person.sex}")
     private String gender;
 //    @Value("${Person.birth}")
 //    private Date birth;
@@ -58,7 +58,6 @@ public class Student {
 //    private Map<String,Object> maps;
 //    //@Value("${Person.lists}")
 //    private List<Object> lists;
-
 
 
     public int getId() {

@@ -10,14 +10,18 @@ import java.util.List;
  * @Date 2020/3/19 15:39
  */
 public interface UserService {
-//根据ID查询
+    //根据ID查询
     public Student queryById(Integer id);
-//查询全部
+
+    //查询全部
     public List<Student> queryAll();
-//添加person
+
+    //添加person
     public void add(Student student);
-//根据ID删除
+
+    //根据ID删除
     public void deleteById(Integer id);
-//修改
+
+    //修改
     public void updata(Student student);
 }

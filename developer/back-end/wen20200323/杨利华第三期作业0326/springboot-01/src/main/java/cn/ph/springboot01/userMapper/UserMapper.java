@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
  * @Author 22356
  * @Date 2020/3/19 15:40
  */
-public interface UserMapper extends JpaRepository<Student,Integer>, JpaSpecificationExecutor<Student> {
+public interface UserMapper extends JpaRepository<Student, Integer>, JpaSpecificationExecutor<Student> {
 
 
 }

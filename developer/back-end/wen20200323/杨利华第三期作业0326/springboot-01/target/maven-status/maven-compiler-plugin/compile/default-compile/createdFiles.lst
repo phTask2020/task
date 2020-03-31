@@ -1,6 +1,6 @@
-cn\ph\springboot01\userService\serviceImpl\userServiceImpl.class
-cn\ph\springboot01\userBean\student.class
+cn\ph\springboot01\userMapper\UserMapper.class
+cn\ph\springboot01\userBean\Student.class
+cn\ph\springboot01\userService\serviceImpl\UserServiceImpl.class
 cn\ph\springboot01\Springboot01Application.class
-cn\ph\springboot01\userService\userservice.class
 cn\ph\springboot01\userController\MyController.class
-cn\ph\springboot01\userMapper\usermapper.class
+cn\ph\springboot01\userService\UserService.class
