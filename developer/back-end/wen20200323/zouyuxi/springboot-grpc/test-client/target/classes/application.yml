@@ -1,0 +1,12 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: local-grpc-client
+
+grpc:
+  client:
+    local-grpc-server:
+      port: 8002
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>访问用户页面</title>
+</head>
+<body>
+
+<h3 th:text="简单地问候语--GRPC测试"></h3>
+<a href="user" th:href="@{/user}">添加用户</a>
+<a href="user/1" th:href="@{/user/1}">修改用户</a>
+<a href="userdel" th:href="@{/userdel}">删除用户</a>
+
+</body>
+</html>
