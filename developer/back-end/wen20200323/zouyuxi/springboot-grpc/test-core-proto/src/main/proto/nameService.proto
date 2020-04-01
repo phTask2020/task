@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+//option java_multiple_files = true;
+option java_package = "com.home.grpc.namelib"; //生成的java存放的包名
+ //   option java_outer_classname = "GreeterWord";  //制定生成的类的名字
+
+
+package nameserver;  //给每个文件取一个包名，防止包过多发生错误
+
+// 定义服务
+service Greeter {
+    // 服务中的方法，用于根据Name类型的参数获得一个Ip类型的返回值
+    rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+//定义用户的姓名，其中name为其序列为1的字段
+message HelloRequest {
+    string name = 1;
+}
+//定义问候语
+message HelloReply {
+    string message  = 1;
+}
+
