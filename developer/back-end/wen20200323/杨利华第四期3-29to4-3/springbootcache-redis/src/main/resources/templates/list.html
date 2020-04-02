@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>首页</title>
+</head>
+<body>
+<h3><a href="/add" th:href="@{/add}">添加</a></h3>
+<table border="1">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>姓名</td>
+        <td>性别</td>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="student:${students}">
+        <!--属性内写法-->
+        <td th:text="${student.id}"></td>
+        <td th:text="${student.name}"></td>
+        <td th:text="${student.gender}"></td>
+        <td><a th:href="@{/change/}+${student.id}">修改</a>
+            <form th:action="@{/delete/}+${student.id}" method="post">
+                <input type="hidden" name="_method" value="delete"/>
+                <button type="submit">删除</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
