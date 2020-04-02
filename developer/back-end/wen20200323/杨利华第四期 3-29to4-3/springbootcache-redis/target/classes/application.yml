@@ -1,0 +1,35 @@
+spring:
+  cache:
+    type: redis
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    #显示后台处理器的sql语句
+    show-sql: true
+    #自动检查实体和数据库表是否一致，如果不一致则会进行更新数据库表
+    hibernate:
+      ddl-auto: none
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    #连接超时时间（毫秒）
+    timeout: 300
+    #redis默认情况下有16个分片，这里配置具体使用的分片，默认是0
+    database: 0
+    lettuce:
+      pool:
+        #连接池最大连接数（使用负值表示没有限制） 默认8
+        max-active: 8
+        #连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+        max-wait: -1
+        #连接池最大空闲连接 默认 8
+        max-idle: 8
+        #连接池最小空闲连接 默认 0
+        min-idle: 0
+
+
