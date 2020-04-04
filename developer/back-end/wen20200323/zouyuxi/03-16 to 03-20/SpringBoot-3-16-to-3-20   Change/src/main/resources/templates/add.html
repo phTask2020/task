@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8"/>
+    <title>添加用户页面</title>
+</head>
+<body>
+<form th:action="@{/user}" method="post" >
+    请输入您的姓名：
+    <input type="text" name="userName" /><br/>
+    请输入您的年龄：
+    <input type="text" name="age"/> <br/>
+    <input type="submit" value="添加"/>
+</form>
+
+</body>
+</html>
