@@ -201,7 +201,7 @@ del{
 .three{
 	height: 658px;
 	width: 100%;
-	border: 1px solid red;
+	border: 1px solid  #F0F8FF;
 }
 .two_title{
 	height: 30px;
@@ -399,13 +399,13 @@ del{
 .three_center{
 	height: 470px;
 	width: 1200px;
-	border: red solid 1px;
+	border: #F6E5D3 solid 1px;
 	margin: 10px auto;
 }
 .three_center_one{
 	height: 470px;
 	width: 245px;
-	border: red solid 1px;
+	border: #F6E5D3 solid 1px;
 	float: left;
 	background: url(../img/three/1.png) no-repeat ;
 	background-size: 100% 100%
@@ -413,7 +413,7 @@ del{
 .three_center_two{
 	width: 474px;
 	height: 234px;
-	border: red solid 1px;
+	border: #F6E5D3 solid 1px;
 	float: left;
 }
 .three_center_one_one{
@@ -454,7 +454,7 @@ del{
 	width: 125px;
 	height: 35px;
 	margin: 60px auto;
-	border: 1px #A7936E solid;
+	border: 1px #F6E5D3 solid;
 	border-radius: 20px;
 	background: #A7936E;
 }
@@ -473,13 +473,13 @@ span{
 .three_center_two_left{
 	width: 194px;
 	height: 234px;
-	border: red 1px solid;
+	border: #F6E5D3 1px solid;
 	float: left;
 }
 .three_center_two_right{
 	width: 276px;
 	height: 234px;
-	border: green 1px solid;
+	border: #F6E5D3 1px solid;
 	float: right;
 }
 .three_center_two_right_one{
@@ -548,7 +548,7 @@ h4{
 .end{
 	width: 80px;
 	height: 30px;
-	border: 1px red solid;
+	border: 1px #F6E5D3 solid;
 	margin-top: 10px;
 	margin-left: 20px;
 	background: #BE4141;
