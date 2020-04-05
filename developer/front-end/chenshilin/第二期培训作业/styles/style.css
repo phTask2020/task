@@ -1,0 +1,596 @@
+
+/* 头部 */
+.p-header{
+    position: relative;
+    width: 69%;
+    height: 55px;
+    background-color: white;
+    margin: auto;
+}
+/* 头部图片 */
+.header-floor{
+    width: 69%;
+    height: 50px;
+    margin: auto;
+}
+/* 第一块内容 */
+.p-main1{
+    width: 69%;
+    height: 300px;
+    background-color:white;
+    margin: auto;
+    margin-top: 30px;
+}
+/* 内容一标题模块设置 */
+.main-title{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+}
+/* 内容一描述 */
+.content{
+    margin-left: 10px;
+    font-size: 6px;
+}
+/* 内容一链接 */
+.link{
+    position: absolute;
+    top: 21px;
+    right: 0px;
+    width: 60px; 
+    height: 20px;
+}
+/* 第一部分内容图片展示块 */
+.main-items{
+    top: 135px;
+    width: 100%px;
+    height: 250px;
+    padding-top: 10px;
+
+}
+/* 图片大小及位置设置 */
+.item1,.item2,.item3,.item4{
+    position: absolute;
+    top: 143px;
+    width: 220px;
+    height: 250px;
+}
+/* 图片设置 */
+.img1{
+    width: 220px;
+    height: 180px;
+}
+.img1:hover{
+    z-index: -1;
+}
+/* 更换图片 */
+.img1:hover + .img1-b{
+    /* background: url(https://yanxuan-item.nosdn.127.net/8b7ee90c2f3062327350669e8c0270dd.png?type=webp&imageView&thumbnail=430x430&quality=95) no-repeat; */
+    z-index: 1;
+}
+.img2{
+    width: 220px;
+    height: 150px;
+}
+/* 更换图片 */
+.img2:hover{
+    /* background: url(https://yanxuan-item.nosdn.127.net/a782bf7e065334d743b8e7a8340ad99e.png?type=webp&imageView&thumbnail=430x430&quality=95); */
+    /* background: image(https://yanxuan-item.nosdn.127.net/a782bf7e065334d743b8e7a8340ad99e.png?type=webp&imageView&thumbnail=430x430&quality=95); */
+    background-image: url(https://yanxuan-item.nosdn.127.net/a782bf7e065334d743b8e7a8340ad99e.png?type=webp&imageView&thumbnail=430x430&quality=95);
+}
+.img3{
+    width: 220px;
+    height: 150px;
+}
+.img3:hover{
+    background: url();
+}
+.img4{
+    width: 220px;
+    height: 150px;
+}
+/* 设置土块背景色和位置 */
+.item2{
+    margin-left: 237px;
+    background-color: rgb(241, 234, 234);
+}
+.item3{
+    margin-left: 475px;
+    background-color: rgb(241, 234, 234);
+}
+.item4{
+    margin-left: 712px;
+    background-color: rgb(241, 234, 234);
+}
+/* 图片下方的小横条 */
+.d1{
+    font-size: 10px;
+    width: 95px;
+    margin-top: 5px;
+    margin-left: 68px;
+    background-color: #dfdb05;
+    color: white;
+}
+.d2{
+    font-size: 10px;
+    width: 38px;
+    margin-top: 3px;
+    margin-left: 95px;
+    background-color: #cc5008;
+    color: white;
+    text-align: center;
+}
+/* 横条下的描述 */
+.l1{
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    /* padding-top: 0px; */
+    top: 209px;
+    left: 50px;
+}
+/* 链接 */
+.l1-a{
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+/* 鼠标悬停动画——更换字体颜色 */
+.l1-a:hover{
+    color: rgb(241, 150, 64);
+}
+/* 价格展示 */
+.p1{
+    position: absolute;
+    font-size: 7px;
+    text-align: center;
+    color: red;
+    margin: 0px;
+    margin-left: 40px;
+    height: 13px;
+    width: 150px;
+    top: 233px;
+}
+.p2{
+    position: absolute;
+    font-size: 7px;
+    text-align: center;
+    color: rgb(177, 163, 163);
+    margin: 0px;
+    margin-left: 60px;
+    height: 13px;
+    width: 150px;
+    top: 233px;
+    text-decoration: line-through;
+}
+.p1-1{
+    position: absolute;
+    font-size: 7px;
+    text-align: center;
+    color: red;
+    margin: 0px;
+    margin-left: 25px;
+    height: 13px;
+    width: 150px;
+    top: 233px;
+}
+/* 左上角小图标 */
+.logo{
+    width: 40px;
+    height: 40px;
+}
+/* 图片上的优惠活动展示 */
+.item-title{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    bottom: 70px;
+    z-index: 2px;
+    background-color: rgb(206, 8, 8);
+    border-radius: 0px 17px 0px 0px;
+}
+.title1{
+    line-height: 0px;
+    color: white;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+.title2{
+    line-height: 0px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+/* 图片上的优惠活动展示 */
+.item-d{
+    position: absolute;
+    bottom: 57px;
+    left: 59px;
+    width: 161px;
+    height: 20px;
+    background-color: red;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+/* 设置图片下方区域的背景色 */
+.item-b{
+    background-color: white;
+    height: 60px;
+}
+/* 鼠标悬停动画——更换背景色 */
+.item-b:hover{
+    background-color: rgb(241, 234, 234);
+}
+/* 第二块内容 */
+.p-main2{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(241, 234, 234);
+    margin-top: 10px;
+}
+/* 头部 */
+.main-title2{
+    width: 71%;
+    height: 55px;
+    margin: auto;
+}
+/* 主体 */
+.main-items2{
+    width: 71%;
+    height: 300px;
+    margin: auto;
+}
+/* 推荐链接 */
+.link2{
+    position: absolute;
+    top: 430px;
+    margin-left: 615px;
+
+}
+/* 左侧最大的图片 */
+.item{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+.item-left{
+    width: 300px;
+    height: 190px;
+    background-color: white;
+}
+
+.img-show{
+    position: absolute;
+    width: 180px;
+    height: 198px;
+    left: 235px;
+    top: 420px;
+}
+.left-title{
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    top: 620px;
+    z-index: 2px;
+    background-color: rgb(206, 8, 8);
+    border-radius: 0px 17px 0px 0px;
+}
+/* 状态 */
+.left-d{
+    position: absolute;
+    top: 615px;
+    left: 300px;
+    width: 201px;
+    height: 20px;
+    background-color: red;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.left-content{
+    width: 300px;
+    height: 110px;
+}
+/* 右侧小图列表 */
+.items-1{
+    position: absolute;
+    top: 458px;
+    margin-left: 310px;
+    width: 637px;
+    height: 300px;
+}
+/* 第一行图列 */
+.items-11{
+    width: 637px;
+    height: 149px;
+}
+/* 第二行图列 */
+.items-12{
+    width: 637px;
+    height: 149px;
+    margin-top: 2px;
+}
+/* 设置大小 */
+.items11-1,.items11-2,.items11-3,.items12-1,.items12-2,.items12-3{
+    width: 207px;
+    height: 148px;
+    background-color: white;
+}
+/* 设置位置 */
+.items11-2{
+    position: absolute;
+    top: 0px;
+    margin-left: 215px;
+}
+.items11-3{
+    position: absolute;
+    top: 0px;
+    margin-left: 430px;
+}
+.items12-2{
+    position: absolute;
+    top: 155px;
+    margin-left: 215px;
+}
+.items12-3{
+    position: absolute;
+    top: 155px;
+    margin-left: 430px;
+}
+/* 图片大小 */
+.item-img{
+    width: 207px;
+    height: 100px;
+}
+/* 图片调整 */
+.show-img{
+    position: absolute;
+    width: 157px;
+    height: 80px;
+    left: 50px;
+    bottom: 220px;
+}
+/* 价格及关键词设置 */
+.img-title{
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    bottom: 200px;
+    z-index: 2px;
+    background-color: rgb(206, 8, 8);
+    border-radius: 0px 17px 0px 0px;
+}
+/* 状态 */
+.img-d{
+    position: absolute;
+    bottom: 187px;
+    left: 98px;
+    width: 109px;
+    height: 20px;
+    background-color: red;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.item-content{
+    width: 207px;
+    height: 50px;
+}
+.key1{
+    position: absolute;
+    background-color: rgb(241, 118, 36);
+    font-size: 3px;
+    color: white;
+    margin-left: 50px;
+    top: 101px;
+}
+.key2{
+    position: absolute;
+    top: 101px;
+    margin-left: 120px;
+    background-color: rgb(241, 118, 36);
+    font-size: 3px;
+    color: white;
+}
+.description{
+    position: absolute;
+    width: 115px;
+    height: 20px;
+    text-align: center;
+    margin-left: 40px;
+    line-height: 11px;
+    top: 118px;
+}
+.price{
+    position: absolute;
+    top: 138px;
+    font-size: 3px;
+    left: 70px;
+}
+.show-img2{
+    position: absolute;
+    width: 157px;
+    height: 80px;
+    left: 50px;
+    bottom: 70px;
+}
+.img-title2{
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    bottom: 50px;
+    z-index: 2px;
+    background-color: rgb(206, 8, 8);
+    border-radius: 0px 17px 0px 0px;
+}
+.img-d2{
+    position: absolute;
+    bottom: 37px;
+    left: 98px;
+    width: 109px;
+    height: 20px;
+    background-color: red;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.item-content2{
+    width: 207px;
+    height: 49px;
+    margin-top: 60px;
+}
+.key1-1{
+    position: absolute;
+    background-color: rgb(241, 118, 36);
+    font-size: 10px;
+    color: white;
+    margin-left: 70px;
+    top: 256px;
+}
+.description-1{
+    position: absolute;
+    width: 115px;
+    height: 20px;
+    text-align: center;
+    margin-left: 40px;
+    line-height: 11px;
+    top: 271px;
+    font-size: 4px;
+}
+.price-1{
+    position: absolute;
+    top: 290px;
+    font-size: 3px;
+    left: 65px;
+}
+.img-title3{
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    bottom: 50px;
+    z-index: 2px;
+    background-color: rgb(248, 113, 113);
+    border-radius: 0px 17px 0px 0px;
+}
+.img-d3{
+    position: absolute;
+    bottom: 37px;
+    left: 98px;
+    width: 109px;
+    height: 20px;
+    background-color: rgb(235, 142, 142);
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+/* 第三块内容板块 */
+.main-3{
+    width: 71%;
+    height: 346px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+/* 头部 */
+.main-title3{
+    width: 71%;
+    height: 55px;
+}
+/* 主体 */
+.main-items3{
+    width: 947px;
+    height: 300px;
+    margin-top: 15px;
+}
+/* 倒计时设计 */
+.main3-data{
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    background-color: white;
+    color: turquoise;
+    font-size: 12px;
+}
+/* 倒计时模块右侧部分 */
+.right-items{
+    width: 797px; 
+    height: 296px; 
+    margin-left: 150px; 
+    background-color: rgba(236, 232, 229, 0.856);
+    border: 2px solid rgb(185, 176, 162);
+    border-left: 0px;
+}
+/* 右侧第一排图列 */
+.items-right1{
+    width: 797px;
+    height: 147px;
+}
+/* 右侧第二排图列 */
+.items-right2{
+    width: 797px;
+    height: 147px;
+    margin-top: 2px;
+}
+/* 第一排及第二排第一块大小设置 */
+.first{
+    width: 398px;
+    height: 147px;
+}
+/* 第一排及第二排第二块大小设置 */
+.second{
+    position: absolute;
+    top: 875px;
+    left: 750px;
+    width: 398px;
+    height: 147px;
+}
+/* 活动价格及描述板块 */
+.d-p{
+    position: absolute;
+    top: 875px;
+    left: 470px;
+    width: 278px;
+    height: 147px;
+}
+.d-p2{
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    width: 278px;
+    height: 147px;
+}
+.d-p3{
+    position: absolute;
+    top: 1025px;
+    left: 470px;
+    width: 278px;
+    height: 147px;
+}
+.d-p4{
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    width: 278px;
+    height: 147px;
+}
+/* 鼠标悬停——改变字体颜色 */
+h4:hover{
+    color: rgb(241, 150, 64);
+}
+.info{
+    color: black;
+    font-size: 13px; 
+    text-decoration: none;
+}
+.info:hover{
+    color: rgb(241, 150, 64);
+}
