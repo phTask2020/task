@@ -264,13 +264,27 @@
     height: 190px;
     background-color: white;
 }
+.item-left:hover{
 
+}
 .img-show{
     position: absolute;
     width: 180px;
     height: 198px;
     left: 235px;
     top: 420px;
+    background: url(https://yanxuan-item.nosdn.127.net/5ad3990d8d1ca731b56ee11d151facfd.png?type=webp&quality=95&thumbnail=320x320&imageView);
+    background-size: 120% 110%;
+    background-repeat: no-repeat;
+}
+/* 添加图片动画 */
+.img-show:hover{
+    -webkit-animation: imgShow 2s 1;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes imgShow{
+    0%{background-size: 120% 110%;}
+    100%{background-size: 130% 120%;}
 }
 .left-title{
     position: absolute;
@@ -356,6 +370,18 @@
     height: 80px;
     left: 50px;
     bottom: 220px;
+    background: url(https://yanxuan-item.nosdn.127.net/cf6cbe1d80601f109a85fd48cbe27478.png?type=webp&quality=95&thumbnail=180y180&imageView); 
+    background-size: 70% 120%; 
+    background-repeat: no-repeat;
+}
+/* 添加图片动画 */
+.show-img:hover{
+    -webkit-animation: item1Show 2s 1;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes item1Show{
+    0%{background-size: 70% 120%;}
+    100%{background-size: 75% 125%;}
 }
 /* 价格及关键词设置 */
 .img-title{
@@ -421,6 +447,18 @@
     height: 80px;
     left: 50px;
     bottom: 70px;
+    background: url(https://yanxuan-item.nosdn.127.net/d286f87e7d38be66b378ebb97d45efe8.png?type=webp&quality=95&thumbnail=180y180&imageView); 
+    background-size: 70% 120%; 
+    background-repeat: no-repeat;
+}
+/* 添加图片动画 */
+.show-img2:hover{
+    -webkit-animation: item2Show 2s 1;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes item2Show{
+    0%{background-size: 70% 120%;}
+    100%{background-size: 75% 125%;}
 }
 .img-title2{
     position: absolute;
@@ -593,4 +631,21 @@ h4:hover{
 }
 .info:hover{
     color: rgb(241, 150, 64);
+}
+.np{
+    position: absolute; 
+    top: 20px; 
+    width: 600px;
+}
+.main3-img{
+    width: 30%; 
+    height: 80%;
+}
+.main3-img:hover{
+    -webkit-animation: main3Img 2s 1;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes main3Img{
+    0%{width: 30%; height: 80%;}
+    100%{width: 33% ;height: 83%;}
 }
