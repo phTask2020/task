@@ -1,0 +1,506 @@
+/* 全局 */
+
+body {
+    font-family: "Microsoft Yahei", "微软雅黑", verdana;
+    color: #333;
+}
+
+div {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+}
+
+img {
+    vertical-align: top;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h4 {
+    font-size: 100%;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+/* 人气推荐 */
+
+#renqi .m-indexPopularItem {
+    padding: 60px 0;
+    background: #f4f0ea;
+}
+
+#renqi .m-indexPopularItem .g-row {
+    width: 1090px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#renqi .m-commonHeader {
+    padding-bottom: 20px;
+}
+
+
+/* 清除浮动 */
+
+#renqi .m-commonHeader:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0
+}
+
+#renqi .m-commonHeader .f-left {
+    float: left;
+}
+
+#renqi .m-commonHeader .f-right {
+    float: right;
+}
+
+#renqi .m-commonHeader .lh1 {
+    line-height: 1;
+}
+
+#renqi .m-commonHeader .name {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin-right: 20px;
+}
+
+#renqi .m-commonHeader .tabList {
+    overflow: hidden;
+    padding-left: 13px;
+    float: left;
+}
+
+#renqi .m-commonHeader .tabList .innerWrap {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+#renqi .m-commonHeader .tabList .innerWrap .item {
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 55px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#renqi .m-commonHeader .tabList .innerWrap .active {
+    border-bottom: 2px solid #b4a078;
+}
+
+#renqi .m-commonHeader .f-right .moreItems {
+    display: inline-block;
+    line-height: 1;
+    margin-left: 30px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+#renqi .m-commonHeader .f-right .f-fz14 {
+    font-size: 14px;
+}
+
+#renqi .showContainer {
+    clear: both;
+    overflow: hidden;
+}
+
+#renqi .showContainer .m-product {
+    line-height: 1;
+    font-size: 13px;
+    width: 245px;
+}
+
+#renqi .showContainer .m-popularItem {
+    background-color: #fff;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+}
+
+#renqi .showContainer .m-popularItem:first-child {
+    width: 390px;
+    height: 570px;
+    margin-left: 0;
+}
+
+#renqi .showContainer .m-popularItem:first-child .hd {
+    margin-bottom: 18px;
+}
+
+#renqi .showContainer .m-popularItem .hd {
+    background: 0 0;
+    border-bottom: 1px solid #F4F0EA;
+}
+
+#renqi .showContainer .m-product .hd {
+    position: relative;
+    overflow: hidden;
+}
+
+#renqi .showContainer .m-product .hd .img {
+    width: 320px;
+    height: 320px;
+    margin: 40px 35px;
+}
+
+#renqi .showContainer .m-product .hd .img-lazyloaded {
+    background-image: none;
+    background: #f4f4f4;
+}
+
+#renqi .showContainer .m-product .hd .white {
+    background-color: #fff;
+    color: #fff;
+}
+
+#renqi .showContainer .m-product .hd .promoLogo {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+#renqi .showContainer .m-product .hd .promBanner {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+#renqi .showContainer .m-product .hd .promBanner .promTitle {
+    max-width: 200px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    margin-top: -6px;
+    z-index: 1;
+    padding-left: 8px;
+    padding-right: 14px;
+    float: left;
+    border-top-left-radius: 3px;
+}
+
+#renqi .showContainer .m-product .hd .promBanner .promTitle .title {
+    font-size: 12px;
+    height: 15px;
+    line-height: 1;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-top: 0;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#renqi .showContainer .m-product .hd .promBanner .promTitle .subTitle {
+    font-size: 14px;
+    height: 20px;
+    line-height: 14px;
+    margin-top: -1px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#renqi .showContainer .m-product .hd .promBanner .promContent {
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 4px;
+    padding-left: 4px;
+}
+
+#renqi .showContainer .m-product .bd .prdtTags {
+    margin-bottom: 10px;
+    height: 20px;
+    font-size: 0;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto 3px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#renqi .showContainer .m-product .bd .prdtTags .m-itemTag:first-child {
+    margin-left: 0;
+}
+
+#renqi .showContainer .m-product .bd .prdtTags .m-itemTag {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #fff!important;
+    padding: 0 5px;
+    font-size: 12px;
+    background-color: #e36844;
+}
+
+#renqi .showContainer .m-product .bd .name {
+    line-height: 26px;
+    max-height: 52px;
+    margin: 0 auto 13px;
+    font-size: 18px;
+    width: 248px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+#renqi .showContainer .m-product .bd .price {
+    font-size: 18px;
+    line-height: 13px;
+    color: #d4282d;
+    padding: 1px 0 9px;
+    margin: 0;
+    text-align: center;
+}
+
+#renqi .showContainer .m-product .bd .price .retailPrice {
+    position: relative;
+    top: 1px;
+}
+
+#renqi .showContainer .m-popularItem:first-child .bd .price span {
+    font-size: 18px;
+    height: 18px;
+    line-height: 1;
+}
+
+#renqi .showContainer .m-product .price span {
+    display: inline-block;
+    overflow: hidden;
+}
+
+#renqi .showContainer .m-product .bd .price .counterPrice {
+    top: 1px;
+    color: #999;
+    position: relative;
+    margin-left: 6px;
+    text-decoration: line-through;
+}
+
+#renqi .showContainer .m-popularItem {
+    background-color: #fff;
+    overflow: hidden;
+    width: 223px;
+    height: 280px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#renqi .showContainer .m-popularItem .hd {
+    background: 0 0;
+    border-bottom: 1px solid #F4F0EA;
+}
+
+#renqi .showContainer .popularItem .hd {
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+#renqi .showContainer .popularItem .hd .img {
+    width: 180px;
+    height: 180px;
+    margin: 0;
+}
+
+#renqi .showContainer .popularItem .hd .promoLogo {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+#renqi .showContainer .popularItem .hd .promBanner {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+#renqi .showContainer .popularItem .hd .promBanner .promTitle {
+    max-width: 200px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    margin-top: -6px;
+    z-index: 1;
+    padding-left: 8px;
+    padding-right: 14px;
+    float: left;
+    border-top-left-radius: 3px;
+    text-align: left;
+}
+
+#renqi .showContainer .popularItem .hd .promBanner .promTitle .title {
+    font-size: 12px;
+    height: 15px;
+    line-height: 1;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-top: 0;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+renqi .showContainer .popularItem .hd .promBanner .promTitle .subTitle {
+    font-size: 14px;
+    height: 20px;
+    line-height: 14px;
+    margin-top: -1px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#renqi .showContainer .popularItem .hd .promBanner .promContent {
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 4px;
+    padding-left: 4px;
+}
+
+#renqi .showContainer .popularItem .bd .prdtTags {
+    margin-bottom: 4px;
+    height: 20px;
+    font-size: 0;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto 3px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#renqi .showContainer .popularItem .bd .prdtTags .m-itemTag:first-child {
+    margin-left: 0;
+}
+
+#renqi .showContainer .popularItem .bd .prdtTags .m-itemTag {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #fff!important;
+    padding: 0 5px;
+    font-size: 12px;
+    background-color: #e36844;
+    text-align: center;
+}
+
+#renqi .showContainer .popularItem .bd .name {
+    width: 136px;
+    margin: 0 auto 4px;
+    max-height: 40px;
+    line-height: 20px;
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+#renqi .showContainer .popularItem .bd .price {
+    font-size: 13px;
+    line-height: 13px;
+    color: #d4282d;
+    padding: 1px 0 9px;
+    margin: 0;
+    text-align: center;
+}
+
+#renqi .showContainer .popularItem .bd .price .retailPrice {
+    position: relative;
+    top: 1px;
+}
+
+#renqi .showContainer .popularItem .bd .price .span {
+    line-height: 13px;
+    height: 13px;
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#renqi .showContainer .popularItem .bd .price .counterPrice {
+    font-size: 12px;
+    color: #999;
+    top: 2px;
+    position: relative;
+    margin-left: 6px;
+    text-decoration: line-through;
+}
+
+#renqi .showContainer .m-popularItem.down {
+    margin-top: 10px;
+}
