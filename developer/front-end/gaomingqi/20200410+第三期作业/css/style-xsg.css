@@ -20,12 +20,6 @@ a {
 }
 
 
-/* 新品首发 */
-
-
-/* 人气推荐 */
-
-
 /* 限时购 */
 
 #xianshigou .m-flashSale {
@@ -44,26 +38,31 @@ a {
 
 #xianshigou .m-commonHeader {
     padding-bottom: 20px;
+    /* 设置flex布局 */
+    display: flex;
+    justify-content: space-between;
 }
 
 
 /* 清除浮动 */
 
-#xianshigou .m-commonHeader:after {
+
+/* #xianshigou .m-commonHeader:after {
     content: "";
     clear: both;
     display: block;
     visibility: hidden;
     height: 0
-}
+} */
 
-#xianshigou .m-commonHeader .f-left {
+
+/* #xianshigou .m-commonHeader .f-left {
     float: left;
 }
 
 #xianshigou .m-commonHeader .f-right {
     float: right;
-}
+} */
 
 #xianshigou .m-commonHeader .lh1 {
     line-height: 1;
@@ -164,10 +163,13 @@ a {
 #xianshigou .bd .flashSaleRt {
     margin-left: 224px;
     height: 429px;
+    /* 设置flex布局 */
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #xianshigou .bd .flashSaleRt .m-flashSaleProduct {
-    float: left;
+    /* float: left; */
     width: 433px;
     height: 214px;
     border: 1px solid #f0ece4;

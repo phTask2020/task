@@ -639,7 +639,7 @@
                     </div>
                     <!-- 商品 -->
                     <section class="bd">
-                        <!-- 左 -->
+                        <!-- 左djs -->
                         <div class="flashSaleLt">
                             <div class="screenHd">14点场</div>
                             <div class="line"></div>
@@ -653,8 +653,9 @@
                             </div>
                             <span class="seeMoreBtn">查看全部&nbsp;&gt;</span>
                         </div>
-                        <!-- 右 -->
+                        <!-- 右sp -->
                         <div class="flashSaleRt">
+                            <!-- 商品1 -->
                             <section class="m-flashSaleProduct">
                                 <!-- 左边小图 -->
                                 <div class="lt">
@@ -671,9 +672,11 @@
                                     </h2>
                                     <p class="itemDes">双重光学模式 紧致明眸</p>
                                     <div class="itemNum">
+                                        <!-- 进度条 -->
                                         <div class="numBar">
                                             <div class="numBarIn" style="width:137px;"></div>
                                         </div>
+                                        <!-- 进度条旁边文字 -->
                                         <div class="numTips"><span>还剩</span><span>274</span><span>件</span></div>
                                     </div>
                                     <div class="itemPrice">
@@ -693,6 +696,7 @@
                                     <a class="w-btn tobuyBtn">立即抢购</a>
                                 </div>
                             </section>
+                            <!-- 商品2 -->
                             <section class="m-flashSaleProduct">
                                 <!-- 左边小图 -->
                                 <div class="lt">
@@ -731,6 +735,7 @@
                                     <a class="w-btn tobuyBtn">立即抢购</a>
                                 </div>
                             </section>
+                            <!-- 商品3 -->
                             <section class="m-flashSaleProduct">
                                 <!-- 左边小图 -->
                                 <div class="lt">
@@ -769,6 +774,7 @@
                                     <a class="w-btn tobuyBtn">立即抢购</a>
                                 </div>
                             </section>
+                            <!-- 商品4 -->
                             <section class="m-flashSaleProduct">
                                 <!-- 左边小图 -->
                                 <div class="lt">
@@ -815,7 +821,6 @@
     </div>
 
     <script>
-        // 页面加载之后就执行这个代码
         window.onload = function() {
 
             countDown();
@@ -833,13 +838,13 @@
                 // 现在时间
                 var nowtime = new Date();
                 // 结束时间
-                var endtime = new Date("2020/04/13,15:00:00");
+                var endtime = new Date("2020/04/14,16:00:00");
                 // 计算倒计时，默认是ms为单位， / 1000使用s为单位
                 var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
-                var d = parseInt(lefttime / (24 * 60 * 60)) // 24 * 60 * 60 s = 天
-                var h = parseInt(lefttime / (60 * 60) % 24); // 60 * 60 超过一天 24，小时就会从新开始
-                var m = parseInt(lefttime / 60 % 60); // 一分钟 60秒
-                var s = parseInt(lefttime % 60); // 60秒！
+                var d = parseInt(lefttime / (24 * 60 * 60))
+                var h = parseInt(lefttime / (60 * 60) % 24);
+                var m = parseInt(lefttime / 60 % 60);
+                var s = parseInt(lefttime % 60);
 
                 d = addZero(d)
                 h = addZero(h);
