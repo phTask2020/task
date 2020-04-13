@@ -5,51 +5,8 @@
         <meta name="author" content="ChenShiLin"/>
         <meta name="description" content="前端培训第一次作业">
         <link type="text/css" href="css/style.css" rel="stylesheet"/>
-        <!-- <script type="text/javascript" src="js/countdown.js"></script> -->
+        <script type="text/javascript" src="js/countdown.js"></script>
         <title>第三期培训作业</title>
-        <script type="text/javascript"> 
-            function showDate (){
-                // 设置活动结束时间
-                var dateStr = "2020-04-11 23:55:00";
-                // 转换为时间
-                var endDate = new Date(dateStr)
-                // 获取系统当前时间
-                var nowDate = new Date();
-                // 获取活动剩余时间的毫秒值
-                var ms = endDate - nowDate;
-                // 转换成天数
-                var days = parseInt(ms/1000/60/60/24,10);
-                // 转换成小时
-                var hours = parseInt(ms/1000/60/60%24,10);
-                // 转换成分钟
-                var minutes = parseInt(ms/1000/60%60,10);
-                // 转换成秒钟
-                var seconds = parseInt(ms/1000%60,10);
-
-                //在页面上显示
-                if (hours>=10) {
-                    document.getElementById("hour").innerHTML = hours; 
-                } else {
-                    document.getElementById("hour").innerHTML = "0" + hours;
-                };
-                if (minutes>=10) {
-                    document.getElementById("minute").innerHTML = minutes;
-                } else {
-                    document.getElementById("minute").innerHTML = "0" + minutes;
-                };
-                if (seconds>=10) {
-                    document.getElementById("second").innerHTML = seconds;
-                } else {
-                    document.getElementById("second").innerHTML = "0" + seconds;
-                } ;  
-                // 递归调用函数
-                window.setTimeout("showDate()",1000);
-                }
-                // 页面加载完后调用方法显示倒计时
-                window.onload = function(){
-                showDate();
-            }    
-        </script>
     </head>
     <body>
         <div class="header">
