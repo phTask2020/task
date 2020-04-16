@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>访问用户页面</title>
+</head>
+<body>
+
+<h3 th:text="请输入您的ID查询您的口号--GRPC测试"></h3>
+<form action="/queryMessageById" th:action="@{/queryMessageById}" method="get" >
+
+    请输入您的id：<br>
+    <input type="text" name="id" >
+
+    <input type="submit" value="提交" >
+</form>
+<div th:replace="~{fragments/footer::footer}"></div>
+</body>
+</html>
