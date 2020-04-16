@@ -1,0 +1,309 @@
+/* 全局 */
+
+body {
+    font-family: "Microsoft Yahei", "微软雅黑", verdana;
+    color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+}
+
+a {
+    color: #333;
+}
+
+
+/* 限时购 */
+
+#xianshigou .m-flashSale {
+    transition: all .6s;
+    opacity: 1;
+    height: 535px;
+}
+
+#xianshigou .m-flashSale .g-row {
+    padding-top: 58px;
+    width: 1090px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#xianshigou .m-commonHeader {
+    padding-bottom: 20px;
+    /* 设置flex布局 */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 清除浮动 */
+
+
+/* #xianshigou .m-commonHeader:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0
+} */
+
+
+/* #xianshigou .m-commonHeader .f-left {
+    float: left;
+}
+
+#xianshigou .m-commonHeader .f-right {
+    float: right;
+} */
+
+#xianshigou .m-commonHeader .lh1 {
+    line-height: 1;
+}
+
+#xianshigou .m-commonHeader .name {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin-right: 20px;
+}
+
+#xianshigou .m-commonHeader .moreItems {
+    display: inline-block;
+    line-height: 1;
+    margin-left: 30px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+#xianshigou .m-commonHeader .f-fz14 {
+    font-size: 14px;
+}
+
+#xianshigou .bd {
+    height: 429px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#xianshigou .bd .flashSaleLt {
+    /* 注意图片路径问题 */
+    background: url(../images/xsg-djs-bg.jpg) center center no-repeat #fff;
+    position: relative;
+    height: 429px;
+    width: 224px;
+    padding-top: 60px;
+    float: left;
+    text-align: center;
+}
+
+#xianshigou .bd .flashSaleLt .screenHd {
+    height: 36px;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 11px;
+    color: #615548;
+}
+
+#xianshigou .bd .flashSaleLt .line {
+    width: 20px;
+    height: 2px;
+    margin: 0 auto 18px;
+    background: #61594b;
+}
+
+#xianshigou .bd .flashSaleLt .screenEndTips {
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #615548;
+    line-height: 22px;
+    height: 22px;
+}
+
+#xianshigou .bd .flashSaleLt .m-countDown {
+    height: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#xianshigou .bd .flashSaleLt .m-countDown .w-cd {
+    width: 40px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #615548;
+    border-radius: 2px;
+}
+
+#xianshigou .bd .flashSaleLt .m-countDown span {
+    display: inline-block;
+}
+
+#xianshigou .bd .flashSaleLt .seeMoreBtn {
+    display: block;
+    width: 110px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #a7936e;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#xianshigou .bd .flashSaleRt {
+    margin-left: 224px;
+    height: 429px;
+    /* 设置flex布局 */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct {
+    /* float: left; */
+    width: 433px;
+    height: 214px;
+    border: 1px solid #f0ece4;
+    border-left: none;
+    background-color: #fff;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .lt {
+    float: left;
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 3px 0;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .lt .picIn {
+    position: relative;
+    display: block;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .lt .pic {
+    width: 180px;
+    height: 180px;
+    border: 1px solid transparent;
+    transition: transform 1s;
+    display: block;
+    margin: 0 auto;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .lt .white {
+    background-color: #fff;
+    color: #fff;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt {
+    margin-left: 180px;
+    height: 187px;
+    padding-top: 14px;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemName {
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 52px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemDes {
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemNum {
+    padding: 14px 0 8px;
+    height: 36px;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemNum .numBar {
+    float: left;
+    position: relative;
+    width: 152px;
+    height: 10px;
+    margin: 2px 0;
+    border: 1px solid #f2cecd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemNum .numBarIn {
+    background-color: #ffe5e5;
+    height: 10px;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemNum .numTips {
+    height: 14px;
+    margin-left: 162px;
+    font-size: 14px;
+    color: #999;
+    line-height: 14px;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemPrice {
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemPrice .aPrice {
+    color: #be4141;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemPrice .yuan {
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemPrice .aPriceIn {
+    margin-right: 12px;
+    vertical-align: sub;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemPrice .oPrice {
+    color: #999;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .itemPrice .oPriceIn {
+    text-decoration: line-through;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .w-btn {
+    display: block;
+    width: 118px;
+    height: 31px;
+    margin-top: 18px;
+    line-height: 31px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .rt .tobuyBtn {
+    background-color: #be4141;
+    color: #fff;
+}

@@ -1,0 +1,339 @@
+/* 全局 */
+
+body {
+    font-family: "Microsoft Yahei", "微软雅黑", verdana;
+    color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+a {
+    color: #333;
+}
+
+h4 {
+    font-size: 100%;
+    padding: 0;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/* 新品首发 */
+
+#xinpin .m-newProducts {
+    height: 510px;
+    margin-top: 30px;
+    position: static;
+}
+
+#xinpin .g-row {
+    width: 1090px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#xinpin .m-commonHeader {
+    padding-bottom: 20px;
+}
+
+button {
+    border: 0;
+    text-rendering: auto;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    align-items: flex-start;
+}
+
+
+/* 清除浮动 */
+
+#xinpin .m-commonHeader:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0
+}
+
+#xinpin .m-commonHeader .f-left {
+    float: left;
+}
+
+#xinpin .m-commonHeader .f-right {
+    float: right;
+}
+
+#xinpin .m-commonHeader .lh1 {
+    line-height: 1;
+}
+
+#xinpin .m-commonHeader .name {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin-right: 20px;
+}
+
+#xinpin .m-commonHeader .frontName {
+    padding-top: 13px;
+    display: inline-block;
+    line-height: 1;
+}
+
+#xinpin .m-commonHeader .f-fz14 {
+    font-size: 14px;
+}
+
+#xinpin .m-commonHeader .moreItems {
+    display: inline-block;
+    line-height: 1;
+    margin-left: 30px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+#xinpin .bd {
+    height: 429px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#xinpin .slickWidth {
+    width: 1090px;
+    overflow: hidden;
+}
+
+#xinpin .slickWidth .m-newItemSlick {
+    width: 1100px;
+}
+
+#xinpin .slickWidth .slick-slider {
+    position: static;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    outline: 0;
+}
+
+#xinpin .slickWidth .slick-list {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    z-index: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#xinpin .slickWidth .slick-track:before {
+    display: table;
+    content: '';
+}
+
+#xinpin .slickWidth .slick-track:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#xinpin .slickWidth .m-product {
+    line-height: 1;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+}
+
+#xinpin .slickWidth .m-newProduct {
+    width: 265px!important;
+    margin-right: 10px;
+}
+
+#xinpin .slickWidth .slick-slide {
+    display: block;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+#xinpin .m-product .hd {
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+#xinpin .m-product .hd .img {
+    width: 265px;
+    height: 265px;
+    transition: transform 1s;
+    background-color: #f4f4f4;
+    color: #f4f4f4;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+}
+
+#xinpin .m-product .hd .img-lazyloaded {
+    background-image: none;
+    background: #f4f4f4;
+    color: #f4f4f4;
+}
+
+#xinpin .m-newProduct .hd .imgScene {
+    display: none!important;
+    width: 265px;
+    height: 265px;
+}
+
+#xinpin .m-newProduct .hd .promoLogo {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+#xinpin .m-newProduct .hd .promBanner {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+#xinpin .m-newProduct .hd .promBanner .promTitle {
+    max-width: 200px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    margin-top: -6px;
+    z-index: 1;
+    padding-left: 8px;
+    padding-right: 14px;
+    float: left;
+    border-top-left-radius: 3px;
+}
+
+#xinpin .m-newProduct .hd .promBanner .promTitle .title {
+    font-size: 12px;
+    height: 15px;
+    line-height: 1;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-top: 0;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#xinpin .m-newProduct .hd .promBanner .promTitle .subTitle {
+    font-size: 14px;
+    height: 20px;
+    line-height: 14px;
+    margin-top: -1px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#xinpin .m-newProduct .hd .promBanner .promContent {
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 4px;
+    padding-left: 4px;
+}
+
+#xinpin .m-product .bd .prdtTags {
+    height: 20px;
+    font-size: 0;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto 3px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#xinpin .m-product .bd .name {
+    width: 166px;
+    margin: 0 auto 4px;
+    max-height: 40px;
+    line-height: 20px;
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+#xinpin .m-product .bd .price {
+    padding: 1px 0 9px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #d4282d;
+    margin: 0;
+    text-align: center;
+}
+
+#xinpin .m-product .bd .price .retailPrice {
+    position: relative;
+    top: 1px;
+}
+
+#xinpin .m-product .bd .price span {
+    line-height: 13px;
+    height: 13px;
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+}
