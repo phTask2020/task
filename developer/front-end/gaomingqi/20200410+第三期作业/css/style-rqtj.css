@@ -191,6 +191,24 @@ h4 {
     background: #f4f4f4;
 }
 
+
+/* 渐变效果 */
+
+#renqi .showContainer .m-product .hd .img-lazyload {
+    transition: all 1.5s ease 0s;
+    /*css属性  持续时间 变换的速率变化  变换的延迟时间 */
+}
+
+
+/* transition 别放hover里，放到img-lazyload里，这样移入移出一样缓慢，不然只对hover移上去有缓慢效果 */
+
+
+/* 放大 */
+
+#renqi .showContainer .m-product .hd .img-lazyload:hover {
+    transform: scale(1.1, 1.1);
+}
+
 #renqi .showContainer .m-product .hd .white {
     background-color: #fff;
     color: #fff;

@@ -32,6 +32,7 @@ img {
 
 a {
     color: #333;
+    cursor: pointer;
 }
 
 h4 {
@@ -217,6 +218,10 @@ button {
     background-image: none;
     background: #f4f4f4;
     color: #f4f4f4;
+}
+
+#xinpin .m-product .hd .img-lazyload:hover {
+    content: url('../images/xpsf-sp-img1.png');
 }
 
 #xinpin .m-newProduct .hd .imgScene {

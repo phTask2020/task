@@ -198,6 +198,16 @@ a {
     transition: transform 1s;
     display: block;
     margin: 0 auto;
+    /* 渐变效果 */
+    transition: all 1.5s ease 0s;
+    /*css属性  持续时间 变换的速率变化  变换的延迟时间 */
+}
+
+
+/* 放大 */
+
+#xianshigou .bd .flashSaleRt .m-flashSaleProduct .lt .pic:hover {
+    transform: scale(1.1, 1.1);
 }
 
 #xianshigou .bd .flashSaleRt .m-flashSaleProduct .lt .white {
