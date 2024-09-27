@@ -1,0 +1,25 @@
+//指定proto3格式
+syntax = "proto3";
+
+//一些生成代码的设置
+option java_multiple_files = true;//以外部类模式生成
+option java_package = "com.changw98.grpcdemo.generate";//所在包名
+option java_outer_classname = "Proto";//最外层类名称
+//option java_generic_services=true;//可以生成rpc接口
+package com.changw98.grpcdemo;
+
+//声明一个服务
+
+service MyService{
+    //请求参数 MyRequest 相应参数 MyResponse
+    rpc SayHello(MyRequest) returns(MyResponse);
+}
+//请求
+message MyRequest{
+    string name=1;
+}
+
+//相应
+message MyResponse{
+    string message=1;
+}
